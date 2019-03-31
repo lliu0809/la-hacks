@@ -1,0 +1,197 @@
+/*--------------------------------------*/
+/*BASIC SETUP*/
+/*--------------------------------------*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background-color: #fff;
+    color:#555;
+    font-family: 'Lato', 'Arial',sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+/*clear float;要不然step section直接从图片下面接；我也没太搞懂这里，和float有关*/
+.clearfix {zoom:1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*--------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*--------------------------------------*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+    
+}
+
+.box{
+    padding: 1%;
+    
+}
+
+/* --------- HEADINGS --------- */
+
+h1,
+h2,
+h3{
+    font-weight: 300;
+    text-transform: uppercase;     /*all letters to uppercase*/ 
+}
+
+h1{
+    margin-top:0;     /*if not this, the h1 will have margine on the top*/
+    margin-bottom: 20px;
+    color:#fff;
+    font-size: 240%;        /*240% of defult 20px*/
+    word-spacing: 6px;
+    letter-spacing: 1px;
+
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 3px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
+}
+
+h2:after{    /*after-psuedo*/
+    display: block;
+    height: 2px;
+    width: 200px;
+    background-color: #e67e22;
+    content: " ";
+    margin: 0 auto;  /*set it to be in center*/
+    margin-top: 30px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* --------- PARAGRAPH --------- */
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+
+.textarea{
+    margin-top: 5px;
+	width: 200px;
+	height: 30px;
+	border: 3px solid #cccccc;
+	padding: 2px;
+    font-family: 'Lato', 'Arial',sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* --------- ICONS --------- */
+.icon-big{
+    font-size: 250%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 32px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    line-height: 120%;   
+    vertical-align: middle;     /*line height also 120 to align with icon*/
+    margin-top: -4px;
+    
+    margin-right: 5px;
+}
+
+/* --------- BUTTON --------- */
+
+.btn {
+    margin-top: 5px;
+    text-decoration: none;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+    border: 2px solid #e67e22;
+    background-color: white;
+    color: #e67e22;
+    padding: 3px 7px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 200px;
+}
+
+.btn-ghost {
+    border-color: #e67e22;
+    border: 1px solid #cf6d17;
+    color: orange;
+}
+
+.btn-ghost:hover {
+    background: #e67e22;
+    border: 1px solid #cf6d17;
+    color: white;
+}
+
+
+.btm {
+    text-decoration: none;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+    border: 1px solid #e67e22;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 200px;
+}
+
+.btm-full {
+    border-color: #e67e22;
+    color: white;
+    border: 1px solid #e67e22;
+
+}
+
+.btm-full:hover {
+    background: #cf6d17;
+    border: 1px solid #cf6d17;
+    color: white;
+}
+
+.whole {
+    margin-left: 50px;
+    margin-right: 50px;
+}
