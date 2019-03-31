@@ -76,5 +76,3 @@ myloop();
 //    chrome.storage.local.set({'timer': data.time},function() {});
 }
 );
-
-
