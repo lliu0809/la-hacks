@@ -19,7 +19,6 @@ html{
     text-rendering: optimizeLegibility;
 }
 
-/*clear float;要不然step section直接从图片下面接；我也没太搞懂这里，和float有关*/
 .clearfix {zoom:1}
 .clearfix:after {
     content: '.';
